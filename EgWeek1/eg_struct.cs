@@ -19,7 +19,6 @@ namespace ConsoleApp1 {
   }
 
   class Program {
-
     static void Main(string[] args) {
       PHANSO ps = new PHANSO();
       ps.nhapPhanSo();

@@ -12,17 +12,19 @@ namespace ConsoleApp3 {
         a[i] = Convert.ToInt32(Console.ReadLine());
       }
     }
+
     public static void xuatMang(int[] a, int n) {
       for (int i = 0; i < n; i++) {
         Console.Write(a[i] + "\t");
       }
     }
+
     public static int tongMang(int[] a, int n) {
       int t = 0;
-      for (int i = 0; i < n; i++)
-        t += a[i];
+      for (int i = 0; i < n; i++) t += a[i];
       return t;
     }
+
     public static int kiemtraSNT(int n) {
       if (n < 2)
         return 0;
@@ -33,11 +35,13 @@ namespace ConsoleApp3 {
         return 1;
       }
     }
+
     public static void xuatSNT(int[] a, int n) {
       for (int i = 0; i < n; i++)
         if (kiemtraSNT(a[i]) == 1)
           Console.WriteLine(a[i]);
     }
+
     static void Main(string[] args) {
       int[] a;
       int n;
