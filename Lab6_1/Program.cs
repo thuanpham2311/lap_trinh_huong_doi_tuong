@@ -11,11 +11,6 @@ namespace Lab6_1
       static int demSoThiSinhKhoiNangkhieu(List<CThiSinh> ds)
         {
             int dem = 0;
-            //for( int i=0; i<ds.Count;i++)
-            //{
-            //    if (ds[i].laKhoiNangKhieu() == true)
-            //        dem++;
-            //}
 
             foreach (CThiSinh ts in ds)
             {
@@ -23,11 +18,6 @@ namespace Lab6_1
                     dem++;
             }
 
-            //foreach (CThiSinh ts in ds)
-            //{
-            //    if (ts is CKhoiNangKhieu)
-            //        dem++;
-            //}
 
             return dem;
         }
@@ -53,16 +43,16 @@ namespace Lab6_1
                 }
             }
             return m;
-        } 
+        }
         static List<CThiSinh> getDSThiSinhDat(List<CThiSinh> ds)
         {
             List<CThiSinh> tmp = new List<CThiSinh>();
             foreach (CThiSinh i in ds)
             {
                 if (i.KetQua() == KieuKetQua.Dat)
-                {                    
-                    tmp.Add(i);                    
-                }                
+                {
+                    tmp.Add(i);
+                }
             }
             return tmp;
         }
