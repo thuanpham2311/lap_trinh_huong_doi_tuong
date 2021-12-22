@@ -4,15 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E4616FAF-2353-45AF-A261-C812FF8B7A37}</ProjectGuid>
+    <ProjectGuid>{FFD4EC74-DE0A-4405-973A-D801BD79BADA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>HocSinh</RootNamespace>
-    <AssemblyName>HocSinh</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RootNamespace>HoaDon_HangHoa</RootNamespace>
+    <AssemblyName>HoaDon_HangHoa</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -47,20 +46,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CHocSinh.cs" />
-    <Compile Include="CTruycapDL1.cs" />
-    <Compile Include="CXulyHocsinh.cs" />
-    <Compile Include="CXulyHocsinh1.cs" />
+    <Compile Include="CChiTietHoaDon.cs" />
+    <Compile Include="CHangHoa.cs" />
+    <Compile Include="CHoaDon.cs" />
+    <Compile Include="CTruyCapDuLieu.cs" />
+    <Compile Include="CXuLyHangHoa.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmHangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHangHoa.Designer.cs">
+      <DependentUpon>frmHangHoa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="frmHangHoa.resx">
+      <DependentUpon>frmHangHoa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
